@@ -2,6 +2,11 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+Suspend, on
+
+^!p::Pause    ; Pause script with Ctrl+Alt+P
+^!s::Suspend  ; Suspend script with Ctrl+Alt+S
+^!r::Reload   ; Reload script with Ctrl+Alt+R
 
 ; My keys
 WheelDown::Send { Down }
